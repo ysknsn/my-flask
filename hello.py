@@ -83,8 +83,9 @@ def index():
 
 if __name__ == '__main__':
     db.create_all()
-    port = int(os.environ.get('PORT',5000))
-    app.run(host='0.0.0.0',port=port)
+    manager.run()
+    # port = int(os.environ.get('PORT',5000))
+    # app.run(host='0.0.0.0',port=port)
     # manager.run(host='0.0.0.0',port=port)
 
     # port = int(os.environ.get('PORT',5000))
